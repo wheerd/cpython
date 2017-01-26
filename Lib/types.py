@@ -36,6 +36,9 @@ MethodType = type(_C()._m)
 BuiltinFunctionType = type(len)
 BuiltinMethodType = type([].append)     # Same as BuiltinFunctionType
 
+SlotWrapperType = type(object.__init__)
+MethodWrapperType = type(object().__str__)
+
 ModuleType = type(sys)
 
 try:
